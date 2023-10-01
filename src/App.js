@@ -1,13 +1,12 @@
 import React from 'react';
-import expensesdata from './components/ExpensesData';
-import Expenses from './components/Expenses';
+import expensesdata from './components/Expenses/ExpensesData';
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
 
   return (
     <>
-    <Expenses data={expensesdata}/>
-    <h1>{expensesdata}</h1>
+    <Expenses items={expensesdata}/>
     </>
   );
 }
